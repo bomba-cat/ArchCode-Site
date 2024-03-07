@@ -1,11 +1,85 @@
+body {
+  background-color: #fcdcfc;
+}
 h1 {
   text-align: center;
   margin-top: 25%;
 }
-#logotopleft {
-  position: absolute;
-  width: 60px;
-  height: 50px;
-  left: 5px;
-  top: 5px;
+
+#discordlogo {
+  width: 40px;
+  height: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 10;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: purple;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content #discord {
+    float: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 240);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content #git {
+  float: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
