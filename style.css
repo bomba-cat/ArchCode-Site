@@ -17,13 +17,20 @@ h1 {
   line-height: 50px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 25px;
-  text-align: center;
+  text-align: left;
+  box-sizing: content-box;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .navbar {
     overflow: hidden;
     background-color: #333;
     border-radius: 10px;
+    position: fixed;
+    top: 0;
+    margin-top: 7px;
+    width: 99%
 }
   
 .navbar a {
@@ -60,7 +67,7 @@ h1 {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
