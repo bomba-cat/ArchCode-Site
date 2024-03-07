@@ -1,12 +1,44 @@
 body {
   background-color: #fcdcfc;
 }
-h1 {
+#zsh {
+  overflow: hidden;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 100px;
+  white-space: nowrap;
   margin-top: 15%;
+  margin-bottom: -6%;
+  margin-left: -55%;
+  letter-spacing: .048em;
 }
+#welcome {
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  margin: 0 auto;
+  margin-left: 27%;
+  white-space: nowrap;
+  letter-spacing: .048em;
+  /*border-right: .1em solid pink;*/
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: pink; }
+  50% { border-color: transparent; }
+}
+
 #title {
   margin-left: 20%;
   font-family: 'Courier New', Courier, monospace;
@@ -24,65 +56,65 @@ h1 {
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 10px;
-    position: fixed;
-    top: 0;
-    margin-top: 7px;
-    width: 99%
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 10px;
+  position: fixed;
+  top: 0;
+  margin-top: 7px;
+  width: 99%;
+  height: 5%;
 }
   
 .navbar a {
-    float: left;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  float: left;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
   
 .dropdown {
-    float: left;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
+  float: left;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
   
 .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    border-radius: 10;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  border-radius: 10px;
 }
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: purple;
+  background-color: purple;
 }
 
 .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content #discord {
-    float: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
-    background-color: rgb(113, 113, 240);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
+  float: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  background-color: rgb(113, 113, 240);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
   
 .dropdown-content #git {
