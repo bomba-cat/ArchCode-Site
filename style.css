@@ -3,12 +3,21 @@ body {
 }
 h1 {
   text-align: center;
-  margin-top: 25%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  margin-top: 15%;
 }
-
-#discordlogo {
-  width: 40px;
-  height: 30px;
+#title {
+  margin-left: 20%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  margin-top: 15%;
+}
+#text {
+  line-height: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
 }
 
 .navbar {
@@ -78,6 +87,16 @@ h1 {
   text-decoration: none;
   display: block;
   text-align: center;
+}
+
+.dropdown #git:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown #discord:hover {
+  color: rgb(113, 113, 240);
+  background-color: rgb(255, 255, 255);
 }
 
 .dropdown:hover .dropdown-content {
