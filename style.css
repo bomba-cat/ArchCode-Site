@@ -8,7 +8,7 @@ body {
   font-size: 100px;
   white-space: nowrap;
   margin-top: 15%;
-  margin-bottom: -6%;
+  margin-bottom: -6.08%;
   margin-left: -55%;
   letter-spacing: .048em;
 }
@@ -27,23 +27,13 @@ body {
     blink-caret .5s step-end infinite;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: pink; }
-  50% { border-color: transparent; }
-}
-
 #title {
+  margin: 0 auto;
   margin-left: 20%;
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
   margin-top: 15%;
+  text-align: left;
 }
 #text {
   line-height: 50px;
@@ -127,6 +117,21 @@ body {
   display: block;
   text-align: center;
 }
+.dropdown-content #download {
+  float: none;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  background-color: orange;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown #download:hover {
+  background-color: white;
+  color: orange;
+}
 
 .dropdown #git:hover {
   color: rgb(0, 0, 0);
@@ -140,4 +145,16 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: pink; }
+  50% { border-color: transparent; }
 }
