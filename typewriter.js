@@ -57,7 +57,7 @@ const useTypewriter = (
 // let previous_width = window.innerWidth;
 // window.addEventListener('resize', handleResize);
 
-const mobile_device = window.innerWidth <= 660
+const mobile_device = (window.innerWidth / window.innerHeight) <= 1
 
 const greeter = document.getElementById('welcome')
 const greeting = mobile_device ? "Hi! CLD" : "Welcome to CLD"

@@ -3,6 +3,10 @@ body {
   margin-bottom: 10%;
 }
 
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .titleconsole {
   position: relative;
   top: 150px;
@@ -15,7 +19,7 @@ body {
 #zsh {
   overflow: hidden;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: calc(1vw + 1vh + 1vmin);
   white-space: nowrap;
   margin-top: 15%;
@@ -27,11 +31,12 @@ body {
 #welcome {
   overflow: hidden;
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: calc(2.5vw + 2.5vh + 2.5vmin);
   /*margin: 0 auto;*/
   margin-left: 18%;
   margin-top: 15%;
+  margin-bottom: 15%;
 
   letter-spacing: .048em;
   display: inline;
@@ -41,7 +46,7 @@ body {
 #blinking {
   overflow: hidden;
   text-align: left;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: calc(2.5vw + 2.5vh + 2.5vmin);
   /*margin: 0 auto;*/
   white-space: nowrap;
@@ -66,14 +71,15 @@ body {
 #title {
   margin: 0 auto;
   margin-left: 20%;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 50px;
   margin-top: 15%;
   text-align: left;
 }
+
 #text {
   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 25px;
   text-align: left;
   box-sizing: content-box;
@@ -88,17 +94,23 @@ body {
   position: fixed;
   top: 0;
   margin-top: 7px;
-  width: 100%;
+  width: 99%;
   height: 5%;
   display: flex;
   align-items: center;
-  align-self: center;
+  z-index: 5;
+}
+
+.center_horizontal {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
 }
   
 .navbar a {
   float: left;
   font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -107,7 +119,7 @@ body {
   
 .dropdown {
   float: left;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   overflow: hidden;
 }
   
@@ -116,17 +128,20 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   border-radius: 10px;
-
   display: flex;
   height: 100%;
+  text-align: center;
+  align-items: center;
 }
   
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .navbar a:active, .dropdown:hover, .dropdown:active, .dropbtn {
   background-color: purple;
+  border-radius: 10px;
+  height: 100%;
+
 }
 
 .dropdown-content {
@@ -135,12 +150,12 @@ body {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 5;
 }
 
 .dropdown-content #discord {
   float: none;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   color: rgb(255, 255, 255);
   background-color: rgb(113, 113, 240);
   padding: 12px 16px;
@@ -151,7 +166,7 @@ body {
   
 .dropdown-content #git {
   float: none;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   color: rgb(255, 255, 255);
   background-color: rgb(0, 0, 0);
   padding: 12px 16px;
@@ -161,7 +176,7 @@ body {
 }
 .dropdown-content #download {
   float: none;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   color: white;
   background-color: orange;
   padding: 12px 16px;
