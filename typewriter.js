@@ -60,7 +60,7 @@ const useTypewriter = (
 const mobile_device = (window.innerWidth / window.innerHeight) <= 1
 
 const greeter = document.getElementById('welcome')
-const greeting = mobile_device ? "Hi! CLD" : "Welcome to CLD"
+const greeting = mobile_device ? "ArchCode" : "Welcome to ArchCode"
 
 const blink_thing_someone_rename_pls = document.getElementById('blinking')
 
