@@ -1,0 +1,10 @@
+- fix layout of navbar when zooming
+    > consistent rounding of corners
+    > consistent space between icons
+    > bar should still grow in vertical size when zooming
+
+- fix layout of image screen when zooming
+    > text size
+    > image distortion at zoom levels above 100%
+
+- clicking on image should reveal a full-screen viewer or something along those lines
